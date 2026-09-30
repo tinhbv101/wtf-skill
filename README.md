@@ -54,6 +54,17 @@ Destrózame esta idea: un Notion propio en una noche
 Rip this apart, nuclear mode: AI agents will replace my whole dev team
 ```
 
+## Optional: feasibility gate
+
+The roast only runs on request. If you also want every build prompt checked for feasibility first, install `rules/feasibility-gate.md`: ordinary tasks pass silently, and only a clearly unrealistic request (scope ~10x beyond the stated time, needs a license / capital / users that code can't provide, or can't work as specified) gets a short, profanity-free warning and a "smaller scope or proceed?" question before any code is written.
+
+```bash
+# Claude Code loads every file in ~/.claude/rules/ into each session
+mkdir -p ~/.claude/rules && ln -s "$PWD/rules/feasibility-gate.md" ~/.claude/rules/
+```
+
+It reads its estimates from the installed skill (`~/.claude/skills/wtf/references/effort-benchmarks.md`), so install the skill first. Other agents: paste the file into your `AGENTS.md` / project instructions.
+
 ## What a reply looks like
 
 0. **WTF-meter** - score and a short verdict
@@ -80,6 +91,7 @@ wtf/
 evals/evals.json             # Test prompts + assertions
 tools/validate.py            # Spec + sourcing lint
 tools/build.py               # Builds dist/wtf.skill and the system prompt
+rules/feasibility-gate.md    # Optional always-on feasibility check (Claude Code rule)
 ```
 
 ## Keeping it accurate
