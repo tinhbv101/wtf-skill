@@ -1,0 +1,104 @@
+{
+  "skill_name": "wtf",
+  "evals": [
+    {
+      "id": 1,
+      "name": "vi-misa-clone-heavy",
+      "prompt": "Chửi tôi đi: tôi định dùng Cursor clone MISA trong 1 giờ rồi bán cho hộ kinh doanh luôn tối nay.",
+      "expected_output": "Vietnamese roast using 'mày', WTF-meter 9-10, MISA figures (founded 1994, ~400,000 business customers), accounting/e-invoice waterline items with Vietnam law (Circular 99/2025 or 133/2016, e-invoice Decree 123/2020 + 70/2025, end of lump-sum tax 2026), way out with one niche loop and a tomorrow-morning action.",
+      "files": [],
+      "assertions": [
+        "Reply is written in Vietnamese",
+        "Uses 'mày' and never 'bạn' to address the user",
+        "Opens with a WTF-meter / 'Độ ngáo' score of 8 or higher",
+        "Mentions at least one MISA figure that appears in references/figures.md",
+        "Mentions at least one Vietnamese accounting or e-invoice rule",
+        "Does not cite Decree 13/2023 as the current personal data rule",
+        "Has a way-out section with three stages: the user's timeframe, 1-2 weeks, and a later multi-month stage",
+        "Contains no emoji"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "en-chatgpt-clone-weekend",
+      "prompt": "No sugarcoating - am I delusional? I'm going to build my own ChatGPT competitor this weekend with vibe coding and charge $5/month, undercutting OpenAI.",
+      "expected_output": "English roast, WTF-meter 9-10, separates 'clone the UI' (hours) from 'clone the model' (billions in compute), AI-app waterline items (inference cost, provider dependency, rate limits, hallucination liability, evals), sourced OpenAI figures, way out suggesting a niche AI tool on top of an API.",
+      "files": [],
+      "assertions": [
+        "Reply is written in English",
+        "Opens with a WTF-meter score of 8 or higher",
+        "Distinguishes cloning the UI from building or training the model",
+        "Mentions inference / API cost eating a $5 price",
+        "Every specific OpenAI figure used appears in references/figures.md",
+        "Suggests a narrower niche product as the way out"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "vi-landing-page-realistic",
+      "prompt": "Phản biện gắt giúp tôi: tôi định làm landing page thu email cho khoá học Excel online trong 2 tiếng bằng AI.",
+      "expected_output": "Low WTF-meter (0-3), says plainly this is doable, only light roast about traffic, personal data law (PDPL 91/2025) and form spam. Does not invent reasons to roast.",
+      "files": [],
+      "assertions": [
+        "Reply is written in Vietnamese",
+        "WTF-meter / 'Độ ngáo' score is 3 or lower",
+        "States explicitly that 2 hours is doable",
+        "Does not use heavy profanity (đm, vcl, đéo)",
+        "Mentions getting traffic / users as the real challenge"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "ja-uber-clone-weekend",
+      "prompt": "ボロクソに言ってくれ。今週末にAIだけでUberのクローンを作って東京でローンチする。エンジニアは雇わない。",
+      "expected_output": "Japanese roast in plain form, bite from coldness not profanity, Uber figures, Japan-specific legal pointers, realistic way out.",
+      "files": [],
+      "assertions": [
+        "Reply is written in Japanese",
+        "Roast parts avoid です/ます keigo",
+        "Opens with a 妄想度 / WTF-meter score of 8 or higher",
+        "Mentions at least one Uber figure that appears in references/figures.md",
+        "Mentions a Japan-specific legal or licensing point"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "en-distressed-sunk-cost",
+      "prompt": "Roast me. I quit my job last month and put $40k of savings into an agency that will replace all of a client's developers with AI agents. Two clients already churned and I'm kind of freaking out.",
+      "expected_output": "Honest reality check with profanity and mockery dropped because the user is distressed; facts kept; most of the reply spent on a concrete way out.",
+      "files": [],
+      "assertions": [
+        "Contains no profanity",
+        "Does not mock the user's decision to quit or their savings",
+        "Still states plainly that replacing all developers with AI is unrealistic",
+        "At least 40% of the reply is the way-out / next-steps section",
+        "Includes a concrete action for tomorrow"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "en-pushback-instagram",
+      "prompt": "Roast me: I'll build a Twitter clone in 3 hours tonight.\n\n[After the roast, the user replies:] Whatever. Instagram had 13 employees when Facebook bought it for $1B. Small teams win. AI makes me a team of 13.",
+      "expected_output": "Handles pushback: short reply, uses Instagram facts (about 18 months, strong engineers, ~30M users, scaled on Facebook infra) to hold the line, invites rescoping.",
+      "files": [],
+      "assertions": [
+        "Uses the Instagram facts from references/figures.md",
+        "Points out the time Instagram took before acquisition",
+        "Invites the user to rescope to one core loop"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "vi-good-faith-no-roast",
+      "prompt": "Giúp tôi lên kế hoạch làm MVP app đặt lịch cắt tóc cho 3 tiệm quen, tôi có khoảng 3 tuần buổi tối.",
+      "expected_output": "Should NOT trigger the roast: a normal, helpful plan without WTF-meter, profanity or 'mày'.",
+      "files": [],
+      "assertions": [
+        "Does not include a WTF-meter / 'Độ ngáo' score",
+        "Does not address the user as 'mày'",
+        "Contains no profanity",
+        "Gives a practical plan"
+      ]
+    }
+  ]
+}
