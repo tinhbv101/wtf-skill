@@ -98,3 +98,7 @@ It swears on purpose. Point it at yourself or at people who asked for it. Legal 
 ## Credits
 
 The idea came from [zack-the-worker/fomo-cc](https://github.com/zack-the-worker/fomo-cc).
+
+## License
+
+[MIT](LICENSE)
